@@ -1,0 +1,17 @@
+body {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-image: url("./images/background.jpg");
+  padding: 1em;
+}
+p {
+  font-size: 12pt;
+  font-family: cursive;
+}
+h1 {
+  font-size: 48pt;
+  font-weight: bold;
+  color: brown;
+}
