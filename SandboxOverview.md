@@ -6,55 +6,61 @@ Instructions for understanding GitHub CodeSpaces are below.
 
 In this document, you will find:
 
-- [Simple Web Design Project](#simple-web-design-project)
-  - [Running the Project](#running-the-project)
-  - [Viewing Your Project](#viewing-your-project)
-  - [Editing Your Project](#editing-your-project)
-    - [Files You Can Ignore](#files-you-can-ignore)
-  - [Adding Extensions](#adding-extensions)
-  - [Saving Your Work to Version Control](#saving-your-work-to-version-control)
-  - [Adding Images](#adding-images)
-    - [Naming Images](#naming-images)
-    - [Image Rights](#image-rights)
-    - [Adding Images to GitHub CodeSpaces](#adding-images-to-github-codespaces)
-  - [Starting from the Terminal](#starting-from-the-terminal)
+- [How to "run" your page](#running-the-project)
+- [How to see your page side-by-side](#viewing-your-project)
+- [Editing your files](#editing-your-project)
+- [Setting up Codespaces Extensions](#adding-extensions)
+- [Saving your work to version control](#saving-your-work-to-version-control)
+- [Adding Images](#adding-images)
 
 ## Running the Project
 
-1. Open the project in VS Code.
-2. Bring the `Terminal` up from the bottom panel.
-3. Type `npm start` in the terminal and hit return.
+1. Open the **Terminal** (use the "Terminal" tab at the bottom of the screen, or
+   choose **Terminal → New Terminal** from the menu).
+2. Type `npm start` and press Enter. This starts a local web server for your page.
+   ![Terminal Screenshot](./screenshots/terminal-github.png)
+3. Leave that terminal running while you work. Every time you save a file, your
+   page will reload automatically. (To stop the server, click in the terminal
+   and press `Ctrl+C`.)
+
+If typing the command doesn't work, you can also open the **Terminal** menu,
+choose **Run Task**, and select **Start Live Server**.
+![Run Task screenshot](screenshots/terminal-run-task.png)
+![Start Live Server screenshot](screenshots/task-start-live-server.png)
 
 ## Viewing Your Project
 
 ![Screenshot of Ports view](./screenshots/ports-github.png)
 
-- You should see a pop up asking if you want to open the page after you run your project. If you click on it, it will open your webpage in a new tab.
-- You can click on "Ports" at the bottom of the screen to see the web connection on your computer.
+- You should see a pop up asking if you want to open the page after you run `npm start`. If you click on it, it will open your webpage in a new tab.
+- You can also click on "Ports" (port `5500`) at the bottom of the screen to see the web connection on your computer.
 
   If you hover over the "Forwarded Address" column, you'll see a "side-by-side" icon that will show
-  the webpage inside your coding editor, or a "Globe" icon that will show the icon inside your web
+  the webpage inside your coding editor, or a "Globe" icon that will show the page inside your web
   browser in a new tab.
 
 ## Editing Your Project
 
-- Choose the "File Explorer" tab to see your files
+- Choose the "File Explorer" tab to see your files in the project root.
+  ![img](./screenshots/github-file-editor.png)
 
 - **index.html**: This is your HTML file. Edit it to change the structure of your web page.
-- **style.css**: This is your CSS file. Modify it to change the styling of your web page.
+- **styles.css**: This is your CSS file. Modify it to change the styling of your web page.
 
 ### Files You Can Ignore
 
 You don't need to worry about the following files and folders. They are used to set up and run your project environment:
 
-- `package.json` and `package-lock.json`: Configuration files for Node.js.
+- `package.json` and `package-lock.json`: Configuration files for Node.js. They are hidden from the Explorer.
 - `node_modules`: A folder containing all the packages and dependencies for the project.
-- `.vscode`: Contains configuration files for Visual Studio Code.
+- `.vscode`: Contains configuration files for Visual Studio Code. It is hidden from the Explorer.
+
+These files are hidden in the editor to keep the student workspace focused. They are still part of the repository and are not a security boundary.
 
 ## Adding Extensions
 
 You should be prompted to install extensions when this Codespace loads -- say yes and you'll
-get automatic code formatting set up as well as github copilot (an AI tool to try to help you code). (To get CoPilot you'll need to have verified your student account with github)
+get automatic code formatting set up as well as GitHub Copilot (an AI tool to try to help you code). (To get CoPilot you'll need to have verified your student account with github)
 
 ## Saving Your Work to Version Control
 
@@ -91,7 +97,7 @@ You can rename images in GitHub by selecting the file and pressing "Enter" or ch
 Before you upload images to your project, you should make sure you have the right to
 use them, either because you created them yourself, or because you found an image in
 the public domain or with a creative commons license that allows re-use. Wikipedia
-or the Wikimedia commons can be good sources of reusable images. 
+or the Wikimedia commons can be good sources of reusable images.
 
 ### Adding Images to GitHub CodeSpaces
 
@@ -101,16 +107,5 @@ menu and selecting upload.
 
 If you put files in the wrong place, you can drag-and-drop to move them.
 
-Images you want to include in your project should be in the "public" folder. 
-I recommend organizing them inside of a separate "images" folder for easy
-file management.
-
-
-## Starting from the Terminal
-
-As an alternative to using the "Play" button, you can also
-type a command to run your project locally.
-
-1. Open the terminal in VS Code (use the "Terminal" tab at the bottom)
-2. Type `npm start` and press Enter. This will start a local server and open your project in a web browser.
-   ![Terminal Screenshot](./screenshots/terminal-github.png)
+Put the images you want to use in the `images` folder. Then you can use them
+in your page with a path like `images/my-picture.jpg`.

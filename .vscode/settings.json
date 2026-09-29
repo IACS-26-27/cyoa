@@ -2,6 +2,28 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/node_modules": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "**/.github": true,
+    ".gitignore": true,
+    "screenshots": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/node_modules": true,
+    "package.json": true,
+    "package-lock.json": true
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.vscode/**": true,
+    "**/node_modules/**": true
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -16,14 +38,5 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.exclude": {
-    ".git": true,
-    ".github": true,
-    ".vscode": true,
-    ".gitignore": true,
-    "*.json": true,
-    "node_modules": true,
-    "screenshots": true
   }
 }
