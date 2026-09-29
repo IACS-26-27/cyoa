@@ -25,7 +25,7 @@
     "**/node_modules/**": true
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -38,5 +38,9 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.extraLiners": "",
+  "html.format.wrapLineLength": 100,
+  "html.format.endWithNewline": true
 }
