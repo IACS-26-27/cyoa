@@ -59,8 +59,13 @@ These files are hidden in the editor to keep the student workspace focused. They
 
 ## Adding Extensions
 
-You should be prompted to install extensions when this Codespace loads -- say yes and you'll
-get automatic code formatting set up as well as GitHub Copilot (an AI tool to try to help you code). (To get CoPilot you'll need to have verified your student account with github)
+When your Codespace loads, you may be asked whether to install the recommended
+**Live Share** extension. Say yes: Live Share lets you invite a classmate to edit
+your code with you in real time.
+
+You don't need to install anything else. Automatic code formatting (every time
+you save) and GitHub Copilot (an AI tool to help you code) are already built in.
+(To use Copilot, you'll need to have verified your student account with GitHub.)
 
 ## Saving Your Work to Version Control
 

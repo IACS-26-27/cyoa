@@ -24,23 +24,23 @@
     "**/.vscode/**": true,
     "**/node_modules/**": true
   },
+  "html.format.indentInnerHtml": true,
+  "html.format.extraLiners": "",
+  "html.format.wrapLineLength": 100,
+  "html.format.endWithNewline": true,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "html.format.indentInnerHtml": true,
-  "html.format.extraLiners": "",
-  "html.format.wrapLineLength": 100,
-  "html.format.endWithNewline": true
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.startupEditor": "readme",
+  "files.insertFinalNewline": true
 }

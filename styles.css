@@ -6,10 +6,12 @@ body {
   background-image: url("./images/background.jpg");
   padding: 1em;
 }
+
 p {
   font-size: 12pt;
   font-family: cursive;
 }
+
 h1 {
   font-size: 48pt;
   font-weight: bold;
